@@ -1,0 +1,98 @@
+/* 清楚表格样式 */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    padding: 20px;
+    margin-left: 300px;
+}
+
+#list {
+    width: 6160px;
+    height: 440px;
+    position: absolute;
+    z-index: 1;
+}
+/* 让图片在一行内显示 */
+#list img{
+    float: left;
+} 
+
+
+/* 小圆点样式设计 */
+#buttons span{
+    cursor: pointer;
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #333;
+    margin-right: 5px;
+}
+
+/* 对应点亮的小圆点：成橘色 */
+#buttons .on{
+    background: orangered;
+}
+
+/* 左右按钮*/
+.arrow{
+    cursor: pointer;
+    display: none;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    top: 180px;
+    background: RGBA(0,0,0,.3);
+    color: #fff;
+}
+.arrow:hover {
+    background-color: RGBA(0,0,0,.7);
+}
+#container:hover .arrow{
+    display: block;
+}
+
+
+#prev{
+    left: 20px;
+}
+#next{
+    right: 20px;
+}
+
+#container{
+    width: 880px;
+    height: 440px;
+    border: 3px solid #333;
+    position: relative;
+    overflow: hidden;
+}
+
+/*小圆点*/
+#buttons{
+    position: absolute; /*小圆点绝对定位*/
+    height: 10px;
+    width: 100px;
+    bottom: 20px;  /*距离底部20px*/
+    left: 50%;  /*左右居中显示*/
+    z-index: 100;  
+}
+
+/*左右按钮*/
+
+#prev{
+    left: 20px;
+}
+
+#next{
+    right: 20px;
+}
